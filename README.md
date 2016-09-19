@@ -11,7 +11,7 @@ Overall this was an execellent beginner project for me to gain introductory know
 1. git clone https://github.com/mmmk84512/Pitch-Perfect
 2. open PitchPerfect.xcodeproj
 
-## Usage
+## Features
 
 ### Record Audio View
 
