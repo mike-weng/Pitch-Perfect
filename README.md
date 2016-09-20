@@ -23,17 +23,15 @@ Overall this was an execellent beginner project for me to gain introductory know
 
 ### Record Audio View
 
-The record audio view is the initial view for the app, and consists of a button with a microphone image. A label indicates that you should tap the button to start recording is located beneath the image.
+The record audio view is the initial view for the app, and consists of a button with a microphone image. User can tap the microphone image to start recording an audio.
 
-Tapping this microphone button starts an AVAudio recording session. The app uses code from AVFoundation to record sounds from the microphone. As the app is recording, the microphone button animates, using a custom UIKit animation function called FadeInAndOut. Adding this animation was my first attempt at utilizing Swift class extensions.
+When the microphone button is tapped, the app will start an AVAudio recording session. After tapping the button, the view will display a “recording” indicator label, and a stop button. I have also added the ability to pause and restart recordings in addition to stopping them by interacting with the audio playback controls.
 
-Tapping the button disables the record button, display a “recording” indicator label, and presenting a stop button. For extra credit, this app presents you with the ability to pause and restart recordings in addition to stopping them by interacting with the audio playback controls.
-
-When the stop button is clicked, the app completes its recording and then pushes the second scene (described below under “Play Sounds View”) onto the navigation stack. The title in the navigation bar appears as “Record”.
+When the stop button is clicked, the app will save its recording and then pushes to the second screen onto the navigation stack. The title in the navigation bar appears as “Record”.
 
 ### Play Sound View
 
-The play sounds view has four buttons to play the recorded sound file and a button to stop the playback.
+This view has six buttons to play the recorded sound file and a button to stop the playback.
 
 The buttons for playing the recorded sounds have images corresponding to their sound effect:
 
@@ -43,11 +41,7 @@ Snail image → Slow sound
 Rabbit image → Fast sound
 Parrot → Echo
 Overlapping Waveforms → Reverb
-Additional sound effects, such as reverb and echo, were implemented and added to this view for extra credit.
 
-The play sounds view is pushed onto the navigation stack. At the top left of the screen, the navigation bar’s left button says “Record”. Clicking this button will pop the play sounds view off the stack and return you to the record sounds view.
-
-At this point, the play sounds view will be in its original state. The microphone button will be enabled and the stop button will be hidden.
 
 ## Contributing
 
