@@ -12,6 +12,14 @@ Overall this was an execellent beginner project for me to gain introductory know
 2. open PitchPerfect.xcodeproj
 
 ## Features
+- Record and replay audio
+- Change the pitch of the audio
+- Change the speed of the audio
+- Add echo effect
+- Add reverb effect
+- Save the audio
+
+## Project Overview
 
 ### Record Audio View
 
@@ -23,7 +31,7 @@ Tapping the button disables the record button, display a “recording” indicat
 
 When the stop button is clicked, the app completes its recording and then pushes the second scene (described below under “Play Sounds View”) onto the navigation stack. The title in the navigation bar appears as “Record”.
 
-###Play Sound View
+### Play Sound View
 
 The play sounds view has four buttons to play the recorded sound file and a button to stop the playback.
 
